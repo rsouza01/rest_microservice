@@ -9,19 +9,23 @@ using namespace web::http;                  // Common HTTP functionality
 using namespace web::http::client;          // HTTP client features
 using namespace concurrency::streams;       // Asynchronous streams
 
-using namespace std;
+using namespace web;
 
-int foo [] = {16, 2, 77, 40, 12071};
-int n, result=0;
+int main(int argc, const char * argv[]) {
 
-int main ()
-{
-  for (n = 0 ; n < 5 ; ++n )
-  {
-    result += foo[n];
-  }
-  
-  cout << result << endl;
-  
-  return 0;
+    try {
+		
+
+
+        std::cout << "Modern C++ Microservice now listening for requests..." << std::endl;
+        
+    }
+    catch(std::exception &e) {
+        std::cerr << "somehitng wrong happen! :(" << '\n';
+    }
+    catch(...) {
+        std::cerr << "Catch...";
+    }
+
+    return 0;
 }
