@@ -1,7 +1,7 @@
 # Rest micro-service
 
 My study files on how to implement a micro-serivce on C++ using the C++ REST SDK.
-
+Based on https://github.com/ivanmejiarocha/micro-service
 
 # How to build
 	$ make
