@@ -45,16 +45,16 @@ int main(int argc, const char * argv[]) {
 
         cout << welcome_message2 << endl;
 
-        SystemProperties* systemProperties = new SystemProperties(argv[0]);
-        cout << "restWS Microservice now listening for requests..." << endl;
+        SystemProperties* systemProperties = new SystemProperties("restws.json");
 
-
+        string port = systemProperties->GetProperty("port");
+        cout << "restWS Microservice now listening for requests on port " << port << "." << endl;
 
         InterruptHandler::waitForUserInterrupt();
 
     }
     catch(std::exception &e) {
-        std::cerr << "somehitng wrong happen! :(" << '\n';
+        std::cerr << "Something wrong happened! :(" << endl;
     }
     catch(...) {
         std::cerr << "Catch...";

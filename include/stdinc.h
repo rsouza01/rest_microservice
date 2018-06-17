@@ -11,3 +11,5 @@
 #include <cpprest/interopstream.h>              // Bridges for integrating Async streams with STL and WinRT streams
 #include <cpprest/rawptrstream.h>               // Async streams backed by raw pointer to memory
 #include <cpprest/producerconsumerstream.h>     // Async streams for producer consumer scenarios
+
+#include "json.hpp"
