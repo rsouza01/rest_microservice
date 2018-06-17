@@ -19,7 +19,11 @@ https://hiltmon.com/blog/2013/07/03/a-simple-c-plus-plus-project-structure/
 https://github.com/ivanmejiarocha/micro-service
 https://medium.com/audelabs/modern-c-micro-service-implementation-rest-api-b499ffeaf898
 
+## Json
 https://github.com/nlohmann/json
+
+## Logs
+https://github.com/Iyengar111/NanoLog
 
 # ASCII Art!!!
 

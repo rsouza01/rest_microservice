@@ -13,3 +13,5 @@
 #include <cpprest/producerconsumerstream.h>     // Async streams for producer consumer scenarios
 
 #include "json.hpp"
+#include "NanoLog.hpp"
+

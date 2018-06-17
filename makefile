@@ -9,7 +9,7 @@ SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
 CFLAGS := -g # -Wall
-LIB := -lboost_system -lssl -lcrypto -lcpprest
+LIB := -lboost_system -lssl -lcrypto -lcpprest -lpthread
 
 INC := -I include
 

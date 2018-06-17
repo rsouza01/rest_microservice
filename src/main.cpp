@@ -41,6 +41,10 @@ int main(int argc, const char * argv[]) {
 
     try {
 		
+        /** Log initialization */
+        nanolog::initialize(nanolog::GuaranteedLogger(), "./logs/", "restws.log", 1);
+        nanolog::set_log_level(nanolog::LogLevel::INFO);
+
         InterruptHandler::hookSIGINT();
 
         cout << welcome_message2 << endl;
@@ -50,11 +54,15 @@ int main(int argc, const char * argv[]) {
         string port = systemProperties->GetProperty("port");
         cout << "restWS Microservice now listening for requests on port " << port << "." << endl;
 
+        LOG_INFO << "Sample NanoLog.";
+
+
         InterruptHandler::waitForUserInterrupt();
 
     }
     catch(std::exception &e) {
         std::cerr << "Something wrong happened! :(" << endl;
+        LOG_CRIT << e.what << endl;
     }
     catch(...) {
         std::cerr << "Catch...";
