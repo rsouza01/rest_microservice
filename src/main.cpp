@@ -26,7 +26,16 @@ static std::string welcome_message =
 "| | |  __/\\__ \\ |_ \\ V  V /\\__ \\\n"
 "|_|  \\___||___/\\__| \\_/\\_/ |___/\n";                                
                                 
-
+static std::string welcome_message2 = 
+"\n\n"
+"                ___          _______ \n"
+"               | \\ \\        / / ____|\n"
+"  _ __ ___  ___| |\\ \\  /\\  / / (___  \n"
+" | '__/ _ \\/ __| __\\ \\/  \\/ / \\___ \\ \n"
+" | | |  __/\\__ \\ |_ \\  /\\  /  ____) |\n"
+" |_|  \\___||___/\\__| \\/  \\/  |_____/ \n";
+                                     
+                                     
 
 int main(int argc, const char * argv[]) {
 
@@ -34,7 +43,7 @@ int main(int argc, const char * argv[]) {
 		
         InterruptHandler::hookSIGINT();
 
-        cout << welcome_message << endl;
+        cout << welcome_message2 << endl;
 
         SystemProperties* systemProperties = new SystemProperties(argv[0]);
         cout << "restWS Microservice now listening for requests..." << endl;
