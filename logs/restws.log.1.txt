@@ -1,0 +1,1 @@
+[2018-06-17 23:15:39.814129][INFO][139935548554560][src/main.cpp:main:57] Sample NanoLog.

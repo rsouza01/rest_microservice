@@ -61,8 +61,8 @@ int main(int argc, const char * argv[]) {
 
     }
     catch(std::exception &e) {
-        std::cerr << "Something wrong happened! :(" << endl;
-        LOG_CRIT << e.what << endl;
+        std::cerr << "Caught exception :\"" << e.what() << "\"" << endl;
+        LOG_CRIT << e.what();
     }
     catch(...) {
         std::cerr << "Catch...";
