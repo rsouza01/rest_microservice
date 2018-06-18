@@ -32,7 +32,7 @@ C++ project [structure](https://hiltmon.com/blog/2013/07/03/a-simple-c-plus-plus
 
 C++ Microservices project [Github](https://github.com/ivanmejiarocha/micro-service).
 
-Another C++ Microservices project [Github](https://medium.com/audelabs/modern-c-micro-service-implementation-rest-api-b499ffeaf898).
+Another C++ Microservices project [Part I](https://medium.com/audelabs/modern-c-micro-service-implementation-rest-api-b499ffeaf898).
 [Part II](https://medium.com/audelabs/modern-c-micro-serivce-rest-api-part-ii-7be067440ca8)
 
 
