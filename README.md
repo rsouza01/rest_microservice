@@ -1,5 +1,17 @@
 # Rest micro-service
 
+[![License][license-image]][license-url]
+
+> ```
+>                ___          _______ 
+>               | \ \        / / ____|
+>  _ __ ___  ___| |\ \  /\  / / (___  
+> | '__/ _ \/ __| __\ \/  \/ / \___ \ 
+> | | |  __/\__ \ |_ \  /\  /  ____) |
+> |_|  \___||___/\__| \/  \/  |_____/ 
+> ```
+
+
 My study files on how to implement a micro-serivce on C++ using the C++ REST SDK.
 Based on https://github.com/ivanmejiarocha/micro-service
 
