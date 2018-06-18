@@ -19,15 +19,6 @@ using namespace restws;
 
 static std::string welcome_message = 
 "\n\n"
-"               _                \n"
-"              | |               \n"
-" _ __ ___  ___| |___      _____ \n"
-"| '__/ _ \\/ __| __\\ \\ /\\ / / __|\n"
-"| | |  __/\\__ \\ |_ \\ V  V /\\__ \\\n"
-"|_|  \\___||___/\\__| \\_/\\_/ |___/\n";                                
-                                
-static std::string welcome_message2 = 
-"\n\n"
 "                ___          _______ \n"
 "               | \\ \\        / / ____|\n"
 "  _ __ ___  ___| |\\ \\  /\\  / / (___  \n"
@@ -47,12 +38,13 @@ int main(int argc, const char * argv[]) {
 
         InterruptHandler::hookSIGINT();
 
-        cout << welcome_message2 << endl;
+        cout << welcome_message << endl;
 
         SystemProperties* systemProperties = new SystemProperties("restws.json");
 
         string port = systemProperties->GetProperty("port");
         cout << "restWS Microservice now listening for requests on port " << port << "." << endl;
+        LOG_INFO << "restWS Microservice now listening for requests on port " << port;
 
         LOG_INFO << "Sample NanoLog.";
 

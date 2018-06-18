@@ -1,1 +1,2 @@
-[2018-06-17 23:15:39.814129][INFO][139935548554560][src/main.cpp:main:57] Sample NanoLog.
+[2018-06-17 23:34:43.747455][INFO][140052756962624][src/main.cpp:main:47] restWS Microservice now listening for requests on port 7654
+[2018-06-17 23:34:43.747459][INFO][140052756962624][src/main.cpp:main:49] Sample NanoLog.
