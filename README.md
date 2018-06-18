@@ -43,3 +43,10 @@ Json implementation [Github](https://github.com/nlohmann/json).
 Logs implementation [Github](https://github.com/Iyengar111/NanoLog).
 
 ASCII Art!!! [website](http://patorjk.com/software/taag).
+
+# License
+See [LICENSE](LICENSE)
+
+
+[license-image]:          http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]:            LICENSE
