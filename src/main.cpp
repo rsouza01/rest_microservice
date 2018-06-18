@@ -32,10 +32,6 @@ int main(int argc, const char * argv[]) {
 
     try {
 		
-        /** Log initialization */
-        nanolog::initialize(nanolog::GuaranteedLogger(), "./logs/", "restws.log", 1);
-        nanolog::set_log_level(nanolog::LogLevel::INFO);
-
         InterruptHandler::hookSIGINT();
 
         cout << welcome_message << endl;
@@ -43,6 +39,14 @@ int main(int argc, const char * argv[]) {
         SystemProperties* systemProperties = new SystemProperties("restws.json");
 
         string port = systemProperties->GetProperty("port");
+        string log_folder = systemProperties->GetProperty("log_folder");
+
+        /** Log initialization */
+        nanolog::initialize(nanolog::GuaranteedLogger(), log_folder, "restws.log", 1);
+        nanolog::set_log_level(nanolog::LogLevel::INFO);
+
+
+
         cout << "restWS Microservice now listening for requests on port " << port << "." << endl;
         LOG_INFO << "restWS Microservice now listening for requests on port " << port;
 
