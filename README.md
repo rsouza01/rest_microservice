@@ -1,7 +1,5 @@
 # Rest micro-service
-
 [![License][license-image]][license-url]
-
 > ```
 >                ___          _______ 
 >               | \ \        / / ____|
