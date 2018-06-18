@@ -31,8 +31,8 @@ C++ Rest SDK [Examples](https://github.com/Microsoft/cpprestsdk/wiki/Samples).
 C++ project [structure](https://hiltmon.com/blog/2013/07/03/a-simple-c-plus-plus-project-structure/).
 
 C++ Microservices project 
-[Part I](https://medium.com/audelabs/modern-c-micro-service-implementation-rest-api-b499ffeaf898).
-[Part II](https://medium.com/audelabs/modern-c-micro-serivce-rest-api-part-ii-7be067440ca8)
+[Part I](https://medium.com/audelabs/modern-c-micro-service-implementation-rest-api-b499ffeaf898) 
+[Part II](https://medium.com/audelabs/modern-c-micro-serivce-rest-api-part-ii-7be067440ca8) 
 [Github](https://github.com/ivanmejiarocha/micro-service).
 
 
