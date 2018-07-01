@@ -18,15 +18,15 @@ using namespace std;
 using namespace restws;
 
 static std::string welcome_message = 
-"\n\n"
-"                ___          _______ \n"
-"               | \\ \\        / / ____|\n"
-"  _ __ ___  ___| |\\ \\  /\\  / / (___  \n"
-" | '__/ _ \\/ __| __\\ \\/  \\/ / \\___ \\ \n"
-" | | |  __/\\__ \\ |_ \\  /\\  /  ____) |\n"
-" |_|  \\___||___/\\__| \\/  \\/  |_____/ \n";
-                                     
-                                     
+R"(
+                         __   __      __  _________                        
+_______   ____   _______/  |_/  \    /  \/   _____/    .__         .__     
+\_  __ \_/ __ \ /  ___/\   __\   \/\/   /\_____  \   __|  |___   __|  |___ 
+ |  | \/\  ___/ \___ \  |  |  \        / /        \ /__    __/  /__    __/ 
+ |__|    \___  >____  > |__|   \__/\  / /_______  /    |__|        |__|    
+             \/     \/              \/          \/                         
+)";
+
 
 int main(int argc, const char * argv[]) {
 
@@ -45,13 +45,10 @@ int main(int argc, const char * argv[]) {
         nanolog::initialize(nanolog::GuaranteedLogger(), log_folder, "restws.log", 1);
         nanolog::set_log_level(nanolog::LogLevel::INFO);
 
-
-
         cout << "restWS Microservice now listening for requests on port " << port << "." << endl;
         LOG_INFO << "restWS Microservice now listening for requests on port " << port;
 
         LOG_INFO << "Sample NanoLog.";
-
 
         InterruptHandler::waitForUserInterrupt();
 

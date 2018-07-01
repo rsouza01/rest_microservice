@@ -8,7 +8,7 @@ TARGET := $(BINDIR)/restws
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
-CFLAGS := -g # -Wall
+CFLAGS := -g -std=c++11 # -Wall
 LIB := -lboost_system -lssl -lcrypto -lcpprest -lpthread
 
 INC := -I include
